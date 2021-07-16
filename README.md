@@ -29,6 +29,7 @@ docker-compose exec mypython autopep8 main.py
 
 ```bash
 docker-compose exec mypython autopep8 -i main.py
+docker-compose exec mypython autopep8 -a -i main.py
 ```
 
 

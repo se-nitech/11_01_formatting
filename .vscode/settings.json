@@ -10,4 +10,8 @@
     "editor.tabSize": 4,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 200,
+    "python.formatting.autopep8Args": [
+        "-a",
+        "-a"
+    ],
 }
