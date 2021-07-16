@@ -6,4 +6,8 @@
     "editor.rulers": [
         80,
     ],
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 200,
 }
