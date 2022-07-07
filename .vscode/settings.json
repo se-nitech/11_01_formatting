@@ -8,10 +8,11 @@
     ],
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 4,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 200,
     "python.formatting.autopep8Args": [
         "-a",
         "-a"
     ],
+    "editor.formatOnSave": true,
 }
