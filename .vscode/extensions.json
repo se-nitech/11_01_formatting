@@ -4,5 +4,9 @@
         "ms-python.python",
         "visualstudioexptteam.vscodeintellicode",
         "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "redhat.java",
+        "xaver.clang-format",
+        "jbenden.c-cpp-flylint",
     ]
 }
