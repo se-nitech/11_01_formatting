@@ -6,6 +6,7 @@
         "mhutchie.git-graph",
         "esbenp.prettier-vscode",
         "redhat.java",
+        "vscjava.vscode-java-pack",
         "xaver.clang-format",
         "jbenden.c-cpp-flylint",
     ]

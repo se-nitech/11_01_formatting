@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/usr/local/bin/python",
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
@@ -8,22 +8,28 @@
     ],
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 200,
     "python.formatting.autopep8Args": [
         "-a",
         "-a"
     ],
-    "editor.formatOnSave": true,
     "[java]": {
         "editor.defaultFormatter": "redhat.java"
     },
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
-    "c-cpp-flylint.clang.enable": false,
-    "c-cpp-flylint.lizard.enable": false,
-    "c-cpp-flylint.flexelint.enable": false,
+    "c-cpp-flylint.clang.enable": true,
+    "c-cpp-flylint.cppcheck.enable": true,
+    "c-cpp-flylint.lizard.enable": true,
     "c-cpp-flylint.flawfinder.enable": true,
+    "c-cpp-flylint.flexelint.enable": false,
     "c-cpp-flylint.run": "onType",
+    "c-cpp-flylint.language": "c",
+    "c-cpp-flylint.standard": [
+        "c11"
+    ],
 }
