@@ -3,7 +3,7 @@
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleEnabled": false,
     "python.linting.lintOnSave": true,
     "editor.rulers": [
         80,
@@ -11,31 +11,34 @@
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
-    // "editor.formatOnType": true,
     "files.autoSave": "onFocusChange",
-    "files.autoSaveDelay": 200,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        // "editor.defaultFormatter": "ms-python.autopep8",
-    },
-    "python.formatting.provider": "none",
+    // --- experimental ---
+    //
+    // "[python]": {
+    //     // "editor.defaultFormatter": "ms-python.black-formatter",
+    //     "editor.defaultFormatter": "ms-python.autopep8",
+    //     "editor.formatOnSave": true,
+    // },
+    // "python.formatting.provider": "none",
+    //
+    // --- experimental ---
     // "python.formatting.provider": "autopep8",
-    // "python.formatting.provider": "black",
+    "python.formatting.provider": "black",
     // "python.formatting.provider": "yapf",
-    // "python.formatting.autopep8Args": [
-    //     "-a",
-    //     "-a",
-    //     "--max-line-length",
-    //     "120",
-    // ],
-    // "python.formatting.yapfArgs": [
-    //     "--style",
-    //     "{based_on_style: pep8, column_limit: 120}"
-    // ],
-    // "python.formatting.blackArgs": [
-    //     "--line-length",
-    //     "120"
-    // ],
+    "python.formatting.autopep8Args": [
+        "-a",
+        "-a",
+        "--max-line-length",
+        "120",
+    ],
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{based_on_style: pep8, column_limit: 120}"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
     "[java]": {
         "editor.defaultFormatter": "redhat.java"
     },
@@ -47,7 +50,7 @@
     "c-cpp-flylint.lizard.enable": true,
     "c-cpp-flylint.flawfinder.enable": true,
     "c-cpp-flylint.flexelint.enable": false,
-    "c-cpp-flylint.run": "onType",
+    "c-cpp-flylint.run": "onSave",
     "c-cpp-flylint.language": "c",
     "c-cpp-flylint.standard": [
         "c11"
