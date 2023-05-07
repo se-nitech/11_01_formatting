@@ -1,13 +1,20 @@
 {
     "recommendations": [
-        "ms-ceintl.vscode-language-pack-ja",
-        "ms-python.python",
-        "visualstudioexptteam.vscodeintellicode",
-        "mhutchie.git-graph",
         "esbenp.prettier-vscode",
+        "jbenden.c-cpp-flylint",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "ms-ceintl.vscode-language-pack-ja",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.pylint",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
         "redhat.java",
+        "visualstudioexptteam.vscodeintellicode-completions",
+        "visualstudioexptteam.vscodeintellicode",
         "vscjava.vscode-java-pack",
         "xaver.clang-format",
-        "jbenden.c-cpp-flylint",
     ]
 }
