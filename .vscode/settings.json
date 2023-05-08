@@ -1,17 +1,25 @@
 {
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.lintOnSave": true,
     "editor.rulers": [
         80,
     ],
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    //
     "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    //
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.lintOnSave": true,
+    //
     // --- experimental ---
     //
     // "[python]": {
@@ -22,35 +30,37 @@
     // "python.formatting.provider": "none",
     //
     // --- experimental ---
-    // "python.formatting.provider": "autopep8",
-    "python.formatting.provider": "black",
-    // "python.formatting.provider": "yapf",
-    "python.formatting.autopep8Args": [
-        "-a",
-        "-a",
-        "--max-line-length",
-        "120",
-    ],
-    "python.formatting.yapfArgs": [
-        "--style",
-        "{based_on_style: pep8, column_limit: 120}"
-    ],
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "120"
-    ],
+    //
+    "python.formatting.provider": "autopep8", // autopep8, black, yapf
+    // "python.formatting.autopep8Args": [
+    //     "-a",
+    //     "-a",
+    //     "--max-line-length",
+    //     "120",
+    // ],
+    // "python.formatting.blackArgs": [
+    //     "--line-length",
+    //     "120"
+    // ],
+    // "python.formatting.yapfArgs": [
+    //     "--style",
+    //     "{based_on_style: pep8, column_limit: 120}"
+    // ],
+    //
     "[java]": {
-        "editor.defaultFormatter": "redhat.java"
+        "editor.defaultFormatter": "redhat.java",
+        "editor.insertSpaces": true
     },
-    "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
+    "java.format.enabled": true,
+    "java.format.onType.enabled": true,
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    //
     "c-cpp-flylint.clang.enable": true,
     "c-cpp-flylint.cppcheck.enable": true,
-    "c-cpp-flylint.lizard.enable": true,
-    "c-cpp-flylint.flawfinder.enable": true,
+    "c-cpp-flylint.lizard.enable": false,
+    "c-cpp-flylint.flawfinder.enable": false,
     "c-cpp-flylint.flexelint.enable": false,
-    "c-cpp-flylint.run": "onSave",
+    "c-cpp-flylint.run": "onType",
     "c-cpp-flylint.language": "c",
     "c-cpp-flylint.standard": [
         "c11"
