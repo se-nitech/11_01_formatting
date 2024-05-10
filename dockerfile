@@ -1,11 +1,11 @@
 FROM python:slim
 
 RUN apt -y update && apt -y install git
-RUN pip install pylint flake8 bandit
-RUN pip install pytest coverage
 
 # python
-RUN pip install autopep8 black yapf pycodestyle pydocstyle
+RUN pip install yapf pycodestyle pydocstyle
+# only for cli (vscode extentions work for editor)
+RUN pip install flake8 autopep8
 
 # C/C++
 RUN apt -y install cppcheck clang clang-format

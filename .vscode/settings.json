@@ -14,39 +14,15 @@
     "files.trimTrailingWhitespace": true,
     //
     "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.lintOnSave": true,
-    //
-    // --- experimental ---
-    //
-    // "[python]": {
-    //     // "editor.defaultFormatter": "ms-python.black-formatter",
-    //     "editor.defaultFormatter": "ms-python.autopep8",
-    //     "editor.formatOnSave": true,
-    // },
-    // "python.formatting.provider": "none",
-    //
-    // --- experimental ---
-    //
-    "python.formatting.provider": "autopep8", // autopep8, black, yapf
-    // "python.formatting.autopep8Args": [
-    //     "-a",
-    //     "-a",
-    //     "--max-line-length",
-    //     "120",
-    // ],
-    // "python.formatting.blackArgs": [
-    //     "--line-length",
-    //     "120"
-    // ],
-    // "python.formatting.yapfArgs": [
-    //     "--style",
-    //     "{based_on_style: pep8, column_limit: 120}"
-    // ],
-    //
+    "[python]": {
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        // "editor.defaultFoldingRangeProvider": "ms-python.python",
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
+    },
     "[java]": {
         "editor.defaultFormatter": "redhat.java",
         "editor.insertSpaces": true
@@ -65,4 +41,12 @@
     "c-cpp-flylint.standard": [
         "c11"
     ],
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        // "editor.defaultFormatter": "ms-vscode.cpptools",
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        // "editor.defaultFormatter": "ms-vscode.cpptools",
+    },
 }
