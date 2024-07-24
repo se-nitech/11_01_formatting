@@ -29,7 +29,13 @@
     },
     "java.format.enabled": true,
     "java.format.onType.enabled": true,
+    // Java convention formatting
     "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.format.settings.profile": "JavaConventions",
+    // Google style formatting
+    // see https://code.visualstudio.com/docs/java/java-linting#_formatter
+    // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    // "java.format.settings.profile": "GoogleStyle",
     //
     "c-cpp-flylint.clang.enable": true,
     "c-cpp-flylint.cppcheck.enable": true,
