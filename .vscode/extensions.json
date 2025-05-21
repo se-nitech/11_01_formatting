@@ -11,6 +11,7 @@
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.live-server",
         "tamasfe.even-better-toml",
         "visualstudioexptteam.vscodeintellicode-completions",
         "visualstudioexptteam.vscodeintellicode",
